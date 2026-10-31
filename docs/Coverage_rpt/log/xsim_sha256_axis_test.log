@@ -1,0 +1,65 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Mon Oct 26 05:52:51 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/top_sim/xsim_script.tcl
+# xsim {top_sim} -testplusarg UVM_TESTNAME=sha256_axis_test -testplusarg UVM_VERBOSITY=UVM_LOW -testplusarg uvm_set_config_int=*,recording_detail,UVM_FULL -cov_db_dir ./ -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+UVM_INFO /tools/Xilinx/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18601) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO /tools/Xilinx/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18648) @ 0: reporter [NO_DPI_TSTNAME] UVM_NO_DPI defined--getting UVM_TESTNAME directly, without DPI
+UVM_INFO @ 0: reporter [RNTST] Running test sha256_axis_test...
+UVM_INFO /tools/Xilinx/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(20867) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/test/sha256_axis_test.svh(39) @ 0: uvm_test_top [TEST] Starting Directed AXI-Stream Coverage Test...
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/sequences/sha256_axis_vseq.svh(21) @ 0: reporter@@vseq [VSEQ_AXIS] Starting Directed Sequence Combination...
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/sequences/sha256_axis_vseq.svh(73) @ 261155000: reporter@@vseq [VSEQ_AXIS] Data Plane All Phases Completed.
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/sequences/sha256_axis_vseq.svh(88) @ 261155000: reporter@@vseq [VSEQ_AXIS] Completed Directed Sequence Combination
+UVM_INFO /tools/Xilinx/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(19968) @ 262155000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/test/sha256_test_base.svh(128) @ 262155000: uvm_test_top [TEST_RESULT] === SHA256 UVM TEST PASSED ===
+UVM_INFO /tools/Xilinx/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(13673) @ 262155000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   10
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[NO_DPI_TSTNAME]     1
+[RNTST]     1
+[TEST]     1
+[TEST_DONE]     1
+[TEST_RESULT]     1
+[UVM/COMP/NAMECHECK]     1
+[UVM/RELNOTES]     1
+[VSEQ_AXIS]     3
+
+$finish called at time : 262155 ns : File "/tools/Xilinx/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:18:53 . Memory (MB): peak = 1449.980 ; gain = 8.004 ; free physical = 27254 ; free virtual = 37206
+exit
+INFO: xsimkernel Simulation Memory Usage: 1305448 KB (Peak: 1370984 KB), Simulation CPU Usage: 1148710 ms
+INFO: [Common 17-206] Exiting xsim at Mon Oct 26 06:12:01 2026...

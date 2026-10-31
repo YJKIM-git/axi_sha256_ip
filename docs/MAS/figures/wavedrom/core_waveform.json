@@ -1,0 +1,12 @@
+{ signal: [
+  { name: "clk_i",                wave: "p.....|......" },
+  { name: "start_i",              wave: "010...|......" },
+  { name: "block_i / state_in_i", wave: "x4....|......", data: ["Valid Data"] },
+  { name: "ready_o",              wave: "1.0...|....1." },
+  { name: "busy_o",               wave: "0.1...|....0." },
+  { name: "state_r",              wave: "345666|666783", data: ["IDLE", "INIT", "PRE", "ROUND", "ROUND", "ROUND", "ROUND", "ROUND", "ROUND", "UPDATE", "DONE", "IDLE"] },
+  { name: "round_idx_o",          wave: "x22222|2222xx", data: ["0", "0", "1", "2", "...", "62", "63", "63", "63"] },
+  { name: "done_o",               wave: "0.....|....10" }
+],
+  config: { hscale: 1.5 }
+}

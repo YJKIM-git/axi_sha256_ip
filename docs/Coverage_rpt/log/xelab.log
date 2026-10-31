@@ -1,0 +1,67 @@
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /tools/Xilinx/2025.2/Vivado/bin/unwrapped/lnx64.o/xelab -L uvm -timescale 1ns/10ps -debug typical -cc_type line,tgl,branch -sv_lib dpi -top hdl_top -top hvl_top -snapshot top_sim -ccExclusionFile ./cc_exclude.txt 
+Multi-threading is on. Using 6 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package uvm.uvm_pkg
+Compiling package std.std
+Compiling package work.axi4lite_agent_pkg
+Compiling package work.axis_agent_pkg
+Compiling package work.core_agent_pkg
+Compiling package work.sha256_test_pkg
+Compiling package work.intr_pkg
+Compiling package work.rst_pkg
+Compiling package work.sha256_env_pkg
+Compiling package work.sha256_reg_pkg
+Compiling package work.sha256_vseq_pkg
+Compiling module work.rst_bfm_default
+Compiling module work.intr_bfm_default
+Compiling module work.axi4lite_if_default
+Compiling module work.dr_m_cb
+Compiling module work.mon_cb
+Compiling module work.axis_if_default
+Compiling module work.mon_cb
+Compiling module work.core_if_default
+Compiling module work.axi4lite_monitor_bfm_default
+Compiling module work.axi4lite_driver_bfm_default
+Compiling module work.axis_monitor_if_default
+Compiling module work.axis_m_driver_if_default
+Compiling module work.core_monitor_bfm_default
+Compiling module work.sha256_controller
+Compiling module work.sha256_rotr
+Compiling module work.sha256_sig0
+Compiling module work.sha256_sig1
+Compiling module work.sha256_message_schedule
+Compiling module work.sha256_k_rom
+Compiling module work.sha256_ep0
+Compiling module work.sha256_ep1
+Compiling module work.sha256_ch
+Compiling module work.sha256_maj
+Compiling module work.sha256_add32
+Compiling module work.sha256_round_logic
+Compiling module work.sha256_datapath
+Compiling module work.sha256_core_sva
+Compiling module work.sha256_core_0
+Compiling module work.sha256_wrapper_sva
+Compiling module work.sha256_axi_wrapper_0
+Compiling module work.hdl_top
+Compiling module work.hvl_top
+Built simulation snapshot top_sim
+256_maj
+Compiling module work.sha256_add32
+Compiling module work.sha256_round_logic
+Compiling module work.sha256_datapath
+Compiling module work.sha256_core_sva
+Compiling module work.sha256_core_0
+Compiling module work.sha256_wrapper_sva
+Compiling module work.sha256_axi_wrapper_0
+Compiling module work.hdl_top
+Compiling module work.hvl_top
+Built simulation snapshot top_sim

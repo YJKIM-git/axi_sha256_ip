@@ -1,0 +1,57 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/design/sha256_axi_wrapper.sv" into library work
+INFO: [VRFC 10-311] analyzing module sha256_axi_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/design/sha256_core/sha256_add32.sv" into library work
+INFO: [VRFC 10-311] analyzing module sha256_add32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/design/sha256_core/sha256_ch.sv" into library work
+INFO: [VRFC 10-311] analyzing module sha256_ch
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/design/sha256_core/sha256_controller.sv" into library work
+INFO: [VRFC 10-311] analyzing module sha256_controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/design/sha256_core/sha256_core.sv" into library work
+INFO: [VRFC 10-311] analyzing module sha256_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/design/sha256_core/sha256_datapath.sv" into library work
+INFO: [VRFC 10-311] analyzing module sha256_datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/design/sha256_core/sha256_ep0.sv" into library work
+INFO: [VRFC 10-311] analyzing module sha256_ep0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/design/sha256_core/sha256_ep1.sv" into library work
+INFO: [VRFC 10-311] analyzing module sha256_ep1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/design/sha256_core/sha256_k_rom.sv" into library work
+INFO: [VRFC 10-311] analyzing module sha256_k_rom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/design/sha256_core/sha256_maj.sv" into library work
+INFO: [VRFC 10-311] analyzing module sha256_maj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/design/sha256_core/sha256_message_schedule.sv" into library work
+INFO: [VRFC 10-311] analyzing module sha256_message_schedule
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/design/sha256_core/sha256_rotr.sv" into library work
+INFO: [VRFC 10-311] analyzing module sha256_rotr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/design/sha256_core/sha256_round_logic.sv" into library work
+INFO: [VRFC 10-311] analyzing module sha256_round_logic
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/design/sha256_core/sha256_sig0.sv" into library work
+INFO: [VRFC 10-311] analyzing module sha256_sig0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/design/sha256_core/sha256_sig1.sv" into library work
+INFO: [VRFC 10-311] analyzing module sha256_sig1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/dv/utils/interrupt/intr_pkg.svh" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/dv/utils/interrupt/intr_bfm.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/dv/utils/reset/rst_pkg.svh" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/dv/utils/reset/rst_bfm.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/dv/agents/axi4lite_agent/axi4lite_agent_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/dv/agents/axi4lite_agent/axi4lite_if.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/dv/agents/axi4lite_agent/axi4lite_monitor_bfm.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/dv/agents/axi4lite_agent/axi4lite_driver_bfm.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/dv/agents/axis_agent/axis_if.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/dv/agents/axis_agent/axis_agent_pkg.svh" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/dv/agents/axis_agent/axis_monitor_bfm.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/dv/agents/axis_agent/axis_m_driver_bfm.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/dv/agents/core_agent/core_if.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/dv/agents/core_agent/core_agent_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/dv/agents/core_agent/core_monitor_bfm.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/dv/bl_tb/register_model/sha256_reg_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/dv/bl_tb/env/sha256_env_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/dv/bl_tb/sequences/sha256_vseq_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/dv/bl_tb/test/sha256_test_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/dv/bl_tb/tb/sha256_core_sva.sv" into library work
+INFO: [VRFC 10-311] analyzing module sha256_core_sva
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/dv/bl_tb/tb/sha256_wrapper_sva.sv" into library work
+INFO: [VRFC 10-311] analyzing module sha256_wrapper_sva
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/dv/bl_tb/tb/hvl_top.sv" into library work
+INFO: [VRFC 10-311] analyzing module hvl_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/uvm_sha256/dv/bl_tb/tb/hdl_top.sv" into library work
+INFO: [VRFC 10-311] analyzing module hdl_top

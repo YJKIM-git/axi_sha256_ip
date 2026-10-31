@@ -1,0 +1,6 @@
+{
+  "reg": [
+    {"bits": 32, "name": "LEN_LO / HI", "attr": "RO"}
+  ],
+  "config": {"lanes": 1, "bits": 32}
+}

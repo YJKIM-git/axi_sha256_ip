@@ -1,0 +1,157 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Mon Oct 26 06:54:09 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/top_sim/xsim_script.tcl
+# xsim {top_sim} -testplusarg UVM_TESTNAME=sha256_overall_test -testplusarg UVM_VERBOSITY=UVM_LOW -testplusarg uvm_set_config_int=*,recording_detail,UVM_FULL -cov_db_dir ./ -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+UVM_INFO /tools/Xilinx/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18601) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO /tools/Xilinx/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18648) @ 0: reporter [NO_DPI_TSTNAME] UVM_NO_DPI defined--getting UVM_TESTNAME directly, without DPI
+UVM_INFO @ 0: reporter [RNTST] Running test sha256_overall_test...
+UVM_INFO /tools/Xilinx/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(20867) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/test/sha256_overall_test.svh(36) @ 0: uvm_test_top [TEST] Starting sha256_overall_vseq to execute Overall Test Plan...
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/sequences/sha256_overall_vseq.svh(28) @ 0: reporter@@vseq [VSEQ] Starting Overall Verification Plan
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/sequences/sha256_overall_vseq.svh(74) @ 0: reporter@@vseq [VSEQ_OA] Starting do_oa_lifecycle
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/env/sha256_scoreboard.svh(179) @ 2645000: uvm_test_top.m_env.m_scoreboard [oa_byte_swap / Datapath] [PASS] Hash Match! Length: 4 Bytes
+Hash: e016022b004ca4517ee3e008dcbd9f315b88a226c3485e1c71ea9e8e5fcc4fcf
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/sequences/sha256_overall_vseq.svh(96) @ 2935000: reporter@@vseq [VSEQ_OA] Starting do_oa_e2e_hash
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/env/sha256_scoreboard.svh(179) @ 6075000: uvm_test_top.m_env.m_scoreboard [oa_byte_swap / Datapath] [PASS] Hash Match! Length: 13 Bytes
+Hash: c9a5561576607350dbb83f29bc792ee59f624c916c3a52d40c817b1ccf39b31f
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/env/sha256_scoreboard.svh(179) @ 11065000: uvm_test_top.m_env.m_scoreboard [oa_byte_swap / Datapath] [PASS] Hash Match! Length: 130 Bytes
+Hash: 6387d66606fa7f274dcbf997ecb0b53b95c99f7a02d4ed766b454e71470d4357
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/env/sha256_scoreboard.svh(179) @ 18565000: uvm_test_top.m_env.m_scoreboard [oa_byte_swap / Datapath] [PASS] Hash Match! Length: 372 Bytes
+Hash: b8ccc82c5819c66a8b3574e7784ff1836b14bb54a5c9af46ce30a47c0c2efa01
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/sequences/sha256_overall_vseq.svh(129) @ 18835000: reporter@@vseq [VSEQ_OA] Starting do_oa_pad_edge
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/env/sha256_scoreboard.svh(179) @ 22165000: uvm_test_top.m_env.m_scoreboard [oa_pad_edge] [PASS] Hash Match! Length: 55 Bytes
+Hash: 432c92c434c45a24f49085c53898989b76c3adef7f1d80515f2f2594c416dcc3
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/env/sha256_scoreboard.svh(179) @ 26685000: uvm_test_top.m_env.m_scoreboard [oa_pad_edge] [PASS] Hash Match! Length: 56 Bytes
+Hash: e2bbb01c64ed91f956b1a9356102a14f2eb1e2aa0f23ee8581322852dc51747e
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/env/sha256_scoreboard.svh(179) @ 31845000: uvm_test_top.m_env.m_scoreboard [oa_pad_edge] [PASS] Hash Match! Length: 64 Bytes
+Hash: ab6dd15ccc713437edb20e03659c376e13a4e87b7d4baee77bba3ebc36a77c24
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/sequences/sha256_overall_vseq.svh(211) @ 32225000: reporter@@vseq [VSEQ_OA] Starting do_oa_manual_chain (Custom IV & Manual Chaining)
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/sequences/sha256_overall_vseq.svh(74) @ 38895000: reporter@@vseq [VSEQ_OA] Starting do_oa_lifecycle
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/env/sha256_scoreboard.svh(179) @ 41905000: uvm_test_top.m_env.m_scoreboard [oa_byte_swap / Datapath] [PASS] Hash Match! Length: 4 Bytes
+Hash: 890250006bbdab4ff2224c78e55434a1b8f2559210977462536bb1f2ad4f3186
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/sequences/sha256_overall_vseq.svh(255) @ 42175000: reporter@@vseq [VSEQ_OA] Starting do_oa_b2b_trans
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/env/sha256_scoreboard.svh(179) @ 45485000: uvm_test_top.m_env.m_scoreboard [oa_byte_swap / Datapath] [PASS] Hash Match! Length: 4 Bytes
+Hash: 38d22b597f2fd6680ae79c6593f0af81507f54819371aefb128ffc36201889ab
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/env/sha256_scoreboard.svh(179) @ 48375000: uvm_test_top.m_env.m_scoreboard [oa_byte_swap / Datapath] [PASS] Hash Match! Length: 4 Bytes
+Hash: f79f3ade7f540af01a8286ef46c1958201e2ddc72ac7a1177b49c2c5b3703e26
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/env/sha256_scoreboard.svh(179) @ 51565000: uvm_test_top.m_env.m_scoreboard [oa_byte_swap / Datapath] [PASS] Hash Match! Length: 4 Bytes
+Hash: 76684a17641d0d6a0c5f47f2017a6ee7036b1600506d7da2bf1089506fa94490
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/env/sha256_scoreboard.svh(179) @ 54335000: uvm_test_top.m_env.m_scoreboard [oa_byte_swap / Datapath] [PASS] Hash Match! Length: 4 Bytes
+Hash: d7ae98a4f4ade55d429652244e08764cb16393490da7b14b7a90f3d5e82cc3e3
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/env/sha256_scoreboard.svh(179) @ 57645000: uvm_test_top.m_env.m_scoreboard [oa_byte_swap / Datapath] [PASS] Hash Match! Length: 4 Bytes
+Hash: 3e64c98aefc139acb70c2f23f6d53a69aea62b6765c38c74a5fbfa4bc3ddce4d
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/env/sha256_scoreboard.svh(179) @ 60945000: uvm_test_top.m_env.m_scoreboard [oa_byte_swap / Datapath] [PASS] Hash Match! Length: 4 Bytes
+Hash: ccdc5f163b41bf07971792488724091211bcbb5c3b9c46aa074f7a2a43583033
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/env/sha256_scoreboard.svh(179) @ 63945000: uvm_test_top.m_env.m_scoreboard [oa_byte_swap / Datapath] [PASS] Hash Match! Length: 4 Bytes
+Hash: 10fb85fba14c7c831958798afd08bbbeed561fc9375b28389235893efed38722
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/env/sha256_scoreboard.svh(179) @ 67105000: uvm_test_top.m_env.m_scoreboard [oa_byte_swap / Datapath] [PASS] Hash Match! Length: 4 Bytes
+Hash: 07dc2c9d49d0ebf37be4eed9b42fcf2339869569d7554115709cc33cc8405cf8
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/env/sha256_scoreboard.svh(179) @ 70135000: uvm_test_top.m_env.m_scoreboard [oa_byte_swap / Datapath] [PASS] Hash Match! Length: 4 Bytes
+Hash: 4c86b5b0096361b29c7e6b0691effbef7234139a9b6959f88990d8f16b824f38
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/env/sha256_scoreboard.svh(179) @ 73385000: uvm_test_top.m_env.m_scoreboard [oa_byte_swap / Datapath] [PASS] Hash Match! Length: 4 Bytes
+Hash: 8066caf896d38d82f49184a0c186695c6d71da68e4febe0ccf741a2035db07d2
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/env/sha256_scoreboard.svh(179) @ 76525000: uvm_test_top.m_env.m_scoreboard [oa_byte_swap / Datapath] [PASS] Hash Match! Length: 4 Bytes
+Hash: c77ac9c66dd75a23b2d5ca75a85d1b91b2279fb27471499e3496a60136f119d9
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/env/sha256_scoreboard.svh(179) @ 79845000: uvm_test_top.m_env.m_scoreboard [oa_byte_swap / Datapath] [PASS] Hash Match! Length: 4 Bytes
+Hash: 2b8b4a0da88f5926828e7b59f457f15c7535b39cfbbe7230f0946f48cfa258d7
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/env/sha256_scoreboard.svh(179) @ 82865000: uvm_test_top.m_env.m_scoreboard [oa_byte_swap / Datapath] [PASS] Hash Match! Length: 4 Bytes
+Hash: e92954b5b6f86a5f373e4723fb508ac86f2a4f6007f89742ecf2baa1bb6e241f
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/env/sha256_scoreboard.svh(179) @ 86075000: uvm_test_top.m_env.m_scoreboard [oa_byte_swap / Datapath] [PASS] Hash Match! Length: 4 Bytes
+Hash: 33d2fa93300a1e36eea9affefdb3b66159bdcfd606f1553111fc2d4234a0b2a8
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/env/sha256_scoreboard.svh(179) @ 89125000: uvm_test_top.m_env.m_scoreboard [oa_byte_swap / Datapath] [PASS] Hash Match! Length: 4 Bytes
+Hash: f425559b9c930e898a4ae0205124f9f6220af981bab759db7bd25dadabde2d5b
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/env/sha256_scoreboard.svh(179) @ 92615000: uvm_test_top.m_env.m_scoreboard [oa_byte_swap / Datapath] [PASS] Hash Match! Length: 4 Bytes
+Hash: 61e106c0c949ea51f43cbfdb39238b97814339645d71bc504567efa33feeea47
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/env/sha256_scoreboard.svh(179) @ 95685000: uvm_test_top.m_env.m_scoreboard [oa_byte_swap / Datapath] [PASS] Hash Match! Length: 4 Bytes
+Hash: 2fff001219975036352fab9bfc02f90cf892e5a50b45c656c8574c36d8193623
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/env/sha256_scoreboard.svh(179) @ 99055000: uvm_test_top.m_env.m_scoreboard [oa_byte_swap / Datapath] [PASS] Hash Match! Length: 4 Bytes
+Hash: 046eebc0656d23070124efcfc3d69de7f6e9ca965b27be6628a72e152c98bc3e
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/env/sha256_scoreboard.svh(179) @ 102445000: uvm_test_top.m_env.m_scoreboard [oa_byte_swap / Datapath] [PASS] Hash Match! Length: 4 Bytes
+Hash: b14d54f927e7d03fb413a2454a4f571aad0e347e73e5b4fbf9e6622a5a01c04e
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/env/sha256_scoreboard.svh(179) @ 105575000: uvm_test_top.m_env.m_scoreboard [oa_byte_swap / Datapath] [PASS] Hash Match! Length: 4 Bytes
+Hash: a8347f74c7511a8a7471f91169d09f5c4036aab057cb47b25b23504f5275f040
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/sequences/sha256_overall_vseq.svh(340) @ 105915000: reporter@@vseq [VSEQ_OA] Starting do_oa_stress
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/env/sha256_scoreboard.svh(179) @ 115645000: uvm_test_top.m_env.m_scoreboard [oa_pad_edge] [PASS] Hash Match! Length: 64 Bytes
+Hash: 9d7729133ea397c275e7c766a31b3033caf27b3a7ebabf7940ddf68e4af9e5ee
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/sequences/sha256_overall_vseq.svh(288) @ 115825000: reporter@@vseq [VSEQ_OA] Starting do_oa_disable
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/sequences/sha256_overall_vseq.svh(303) @ 117205000: reporter@@vseq [VSEQ_OA] Verified that transaction is blocked by EN=0. Unblocking...
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/env/sha256_scoreboard.svh(179) @ 120135000: uvm_test_top.m_env.m_scoreboard [oa_byte_swap / Datapath] [PASS] Hash Match! Length: 4 Bytes
+Hash: bb2977cbcf82a0fef0bd873d9e05016da4fbb9bd5bf0ee03b49dabc05de5baea
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/sequences/sha256_overall_vseq.svh(310) @ 120445000: reporter@@vseq [VSEQ_OA] Testing IRQ_EN=0 (Interrupt Masking)...
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/sequences/sha256_overall_vseq.svh(324) @ 121555000: reporter@@vseq [VSEQ_OA] Interrupt masking verified successfully.
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/env/sha256_scoreboard.svh(179) @ 123455000: uvm_test_top.m_env.m_scoreboard [oa_byte_swap / Datapath] [PASS] Hash Match! Length: 4 Bytes
+Hash: b5bdb55747752ae1c5199f79eac3439c7b508a787ee6f40cd84cc7b42baca51d
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/sequences/sha256_overall_vseq.svh(460) @ 123735000: reporter@@vseq [VSEQ_OA] Starting do_oa_tkeep_err (Hardware TKEEP Protection)
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/sequences/sha256_overall_vseq.svh(506) @ 126405000: reporter@@vseq [VSEQ_OA] TKEEP error protection verified! Running normal lifecycle...
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/sequences/sha256_overall_vseq.svh(74) @ 126405000: reporter@@vseq [VSEQ_OA] Starting do_oa_lifecycle
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/env/sha256_scoreboard.svh(179) @ 128755000: uvm_test_top.m_env.m_scoreboard [oa_byte_swap / Datapath] [PASS] Hash Match! Length: 4 Bytes
+Hash: f7a6744b35d0e8a10b031527b6ee15573f9960d7386ef5754bef57a639f52a60
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/sequences/sha256_overall_vseq.svh(374) @ 129125000: reporter@@vseq [VSEQ_OA] Starting do_oa_timeout_recov (True Data Starvation)
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/sequences/sha256_overall_vseq.svh(394) @ 131595000: reporter@@vseq [VSEQ_OA] Timeout (Hang) detected! Issuing SOFT_RESET...
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/sequences/sha256_overall_vseq.svh(404) @ 132205000: reporter@@vseq [VSEQ_OA] Verifying recovery with normal lifecycle...
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/sequences/sha256_overall_vseq.svh(74) @ 132205000: reporter@@vseq [VSEQ_OA] Starting do_oa_lifecycle
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/env/sha256_scoreboard.svh(179) @ 134855000: uvm_test_top.m_env.m_scoreboard [oa_byte_swap / Datapath] [PASS] Hash Match! Length: 4 Bytes
+Hash: 980b90622803f4d27229bc979e351b8ee86d50e1a0f0456a63e3169be1f78433
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/sequences/sha256_overall_vseq.svh(416) @ 135145000: reporter@@vseq [VSEQ_OA] Starting do_oa_busy_recov (Snipe Reset)
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/sequences/sha256_overall_vseq.svh(428) @ 135605000: reporter@@vseq [VSEQ_OA] Injecting SOFT_RESET directly via AXIL Sequence during Core BUSY
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/sequences/sha256_overall_vseq.svh(448) @ 136155000: reporter@@vseq [VSEQ_OA] Core successfully aborted and recovered to IDLE.
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/sequences/sha256_overall_vseq.svh(74) @ 136155000: reporter@@vseq [VSEQ_OA] Starting do_oa_lifecycle
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/env/sha256_scoreboard.svh(179) @ 139265000: uvm_test_top.m_env.m_scoreboard [oa_byte_swap / Datapath] [PASS] Hash Match! Length: 4 Bytes
+Hash: d61f9b70d6a5e75b135f2036424eb590e2e05f80b50b78e0383f4ada6d39b98a
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/sequences/sha256_overall_vseq.svh(43) @ 139575000: reporter@@vseq [VSEQ] Completed Overall Verification Plan
+UVM_INFO /tools/Xilinx/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(19968) @ 144575000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO /home/c0rnpotato/link/uvm_sha256/dv/bl_tb/test/sha256_test_base.svh(128) @ 144575000: uvm_test_top [TEST_RESULT] === SHA256 UVM TEST PASSED ===
+UVM_INFO /tools/Xilinx/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(13673) @ 144575000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   65
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[NO_DPI_TSTNAME]     1
+[RNTST]     1
+[TEST]     1
+[TEST_DONE]     1
+[TEST_RESULT]     1
+[UVM/COMP/NAMECHECK]     1
+[UVM/RELNOTES]     1
+[VSEQ]     2
+[VSEQ_OA]    22
+[oa_byte_swap / Datapath]    30
+[oa_pad_edge]     4
+
+$finish called at time : 144575 ns : File "/tools/Xilinx/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:09:01 . Memory (MB): peak = 1449.980 ; gain = 8.004 ; free physical = 27681 ; free virtual = 37641
+exit
+INFO: xsimkernel Simulation Memory Usage: 846696 KB (Peak: 912232 KB), Simulation CPU Usage: 552310 ms
+INFO: [Common 17-206] Exiting xsim at Mon Oct 26 07:03:24 2026...

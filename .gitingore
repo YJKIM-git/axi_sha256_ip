@@ -1,0 +1,8 @@
+release_note.lnk
+verible.filelist
+.Xil/
+
+.DS_Store
+*.swp
+*~
+.vscode/

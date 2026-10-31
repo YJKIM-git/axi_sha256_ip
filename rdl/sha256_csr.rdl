@@ -1,0 +1,86 @@
+addrmap sha256_csr {
+    name = "SHA-256 AXI Wrapper CSR Map";
+    default regwidth = 32;
+    default sw = r;
+    default hw = w;
+
+    reg {
+        field {
+            sw = r; hw = r;
+            reset = 32'h41749591;
+        } ID_VAL[31:0];
+    } ID @ 0x00;
+
+    reg {
+        default sw = rw;
+        default hw = r;
+        
+        // 펄스 속성: 하드웨어가 1사이클 뒤 스스로 0으로 되돌림
+        field { singlepulse; } SOFT_RESET[3:3] = 0;
+        field { singlepulse; } START[2:2] = 0;
+        
+        // 정적 제어 속성: 명시적 권한 표기
+        field { sw = rw; hw = r; } IRQ_EN[1:1] = 0;
+        field { sw = rw; hw = r; } EN[0:0] = 0;
+    } CTRL @ 0x04;
+
+    reg {
+        default sw = r;
+        default hw = w;
+        field {} ERR_PRT[2:2] = 0;
+        field {} DONE[1:1] = 0;
+        field {} BUSY[0:0] = 0;
+    } STATUS @ 0x08;
+
+    reg {
+        default sw = w;
+        default hw = r;
+        field { singlepulse; } CLR_ERR[2:2] = 0;
+        field { singlepulse; } CLR_DONE[1:1] = 0;
+    } INTCLEAR @ 0x0C;
+
+    reg {
+        field { sw = r; hw = w; } LEN_LO[31:0] = 0;
+    } MSG_LEN_LO @ 0x10;
+
+    reg {
+        field { sw = r; hw = w; } LEN_HI[31:0] = 0;
+    } MSG_LEN_HI @ 0x14;
+
+    // ---------------------------------------------------------
+    // DIGEST: 동일한 속성이므로 1개의 타입만 선언 후 인스턴스화
+    // ---------------------------------------------------------
+    reg digest_t {
+        field { sw = r; hw = w; } HASH_W[31:0] = 0;
+    };
+
+    digest_t DIGEST_0 @ 0x20;
+    digest_t DIGEST_1 @ 0x24;
+    digest_t DIGEST_2 @ 0x28;
+    digest_t DIGEST_3 @ 0x2C;
+    digest_t DIGEST_4 @ 0x30;
+    digest_t DIGEST_5 @ 0x34;
+    digest_t DIGEST_6 @ 0x38;
+    digest_t DIGEST_7 @ 0x3C;
+
+    // ---------------------------------------------------------
+    // STATE_IN: 서로 다른 리셋 값을 가지므로 8개의 고유 타입 선언
+    // ---------------------------------------------------------
+    reg STATE_IN_0_t { field { sw = rw; hw = r; reset = 32'h6a09e667; } IV_W[31:0]; };
+    reg STATE_IN_1_t { field { sw = rw; hw = r; reset = 32'hbb67ae85; } IV_W[31:0]; };
+    reg STATE_IN_2_t { field { sw = rw; hw = r; reset = 32'h3c6ef372; } IV_W[31:0]; };
+    reg STATE_IN_3_t { field { sw = rw; hw = r; reset = 32'ha54ff53a; } IV_W[31:0]; };
+    reg STATE_IN_4_t { field { sw = rw; hw = r; reset = 32'h510e527f; } IV_W[31:0]; };
+    reg STATE_IN_5_t { field { sw = rw; hw = r; reset = 32'h9b05688c; } IV_W[31:0]; };
+    reg STATE_IN_6_t { field { sw = rw; hw = r; reset = 32'h1f83d9ab; } IV_W[31:0]; };
+    reg STATE_IN_7_t { field { sw = rw; hw = r; reset = 32'h5be0cd19; } IV_W[31:0]; };
+
+    STATE_IN_0_t STATE_IN_0 @ 0x80;
+    STATE_IN_1_t STATE_IN_1 @ 0x84;
+    STATE_IN_2_t STATE_IN_2 @ 0x88;
+    STATE_IN_3_t STATE_IN_3 @ 0x8C;
+    STATE_IN_4_t STATE_IN_4 @ 0x90;
+    STATE_IN_5_t STATE_IN_5 @ 0x94;
+    STATE_IN_6_t STATE_IN_6 @ 0x98;
+    STATE_IN_7_t STATE_IN_7 @ 0x9C;
+};
