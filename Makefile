@@ -1,7 +1,6 @@
 REAL_MK_PATH    := $(realpath $(lastword $(MAKEFILE_LIST)))
 
-.PHONY: all peakrdl bl_tb vip clean clean_peakrdl clean_bl_tb clean_vip cd_peakrdl cd_bl_tb cd_vip
-
+.PHONY: all peakrdl bl_tb static_tb fpga clean clean_peakrdl clean_bl_tb clean_static_tb clean_fpga
 all: bl_tb
 
 peakrdl:
