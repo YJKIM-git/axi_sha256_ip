@@ -1,0 +1,6 @@
+{
+  "reg": [
+    {"bits": 32, "name": "IV_W", "attr": "R/W (Reset: Std IV)"}
+  ],
+  "config": {"lanes": 1, "bits": 32}
+}

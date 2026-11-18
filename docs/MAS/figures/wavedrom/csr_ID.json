@@ -1,0 +1,6 @@
+{
+  "reg": [
+    {"bits": 32, "name": "ID_VAL", "attr": "RO (0x41749591)"}
+  ],
+  "config": {"lanes": 1, "bits": 32}
+}

@@ -1,0 +1,1 @@
+-timescale "1ns/1ps" -debug "typical" -top "tb_sha256_tkeep" -snapshot "static_tb_sim" 

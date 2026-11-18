@@ -1,0 +1,75 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed Nov 18 21:46:17 2026
+# Process ID         : 137167
+# Current directory  : /home/c0rnpotato/link/sha256/dv/static_tb/sim
+# Command line       : xsim -mode tcl -source {xsim.dir/static_tb_sim/xsim_script.tcl}
+# Log file           : /home/c0rnpotato/link/sha256/dv/static_tb/sim/xsim.log
+# Journal file       : /home/c0rnpotato/link/sha256/dv/static_tb/sim/xsim.jou
+# Running On         : c0rnpotato
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.3 LTS
+# Processor Detail   : AMD Ryzen 5 5600X 6-Core Processor
+# CPU Frequency      : 3693.107 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 33539 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 42129 MB
+# Available Virtual  : 39492 MB
+#-----------------------------------------------------------
+source xsim.dir/static_tb_sim/xsim_script.tcl
+# xsim {static_tb_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+=========================================================================================
+ SHA-256 AXI4-Stream TKEEP Protocol Violation & Null Beat Directed Testbench
+=========================================================================================
+
+--- [Phase 1] Dedicated Null Beat (TKEEP = 4'b0000) Verification ([WV-AXIS-09] Closure) ---
+[PASS]   NULL_MID_PKT_PRELOAD | tlast=0 | tkeep=4'b0000 | STATUS=0x00000004 (ERR_PRT=1, BUSY=0) | BUF_WIPED=1 | irq_o=1
+[PASS]  NULL_LAST_PKT_PRELOAD | tlast=1 | tkeep=4'b0000 | STATUS=0x00000004 (ERR_PRT=1, BUSY=0) | BUF_WIPED=1 | irq_o=1
+[PASS]    NULL_SINGLE_BEAT_0B | tlast=1 | tkeep=4'b0000 | STATUS=0x00000004 (ERR_PRT=1, BUSY=0) | BUF_WIPED=1 | irq_o=1
+
+--- [Phase 2] Exhaustive 27-Pattern Invalid (TLAST, TKEEP) Truth-Table Sweep ---
+[PASS]           SWEEP_L0_K00 | tlast=0 | tkeep=4'b0000 | STATUS=0x00000004 (ERR_PRT=1, BUSY=0) | BUF_WIPED=1 | irq_o=1
+[PASS]           SWEEP_L0_K01 | tlast=0 | tkeep=4'b0001 | STATUS=0x00000004 (ERR_PRT=1, BUSY=0) | BUF_WIPED=1 | irq_o=1
+[PASS]           SWEEP_L0_K02 | tlast=0 | tkeep=4'b0010 | STATUS=0x00000004 (ERR_PRT=1, BUSY=0) | BUF_WIPED=1 | irq_o=1
+[PASS]           SWEEP_L0_K03 | tlast=0 | tkeep=4'b0011 | STATUS=0x00000004 (ERR_PRT=1, BUSY=0) | BUF_WIPED=1 | irq_o=1
+[PASS]           SWEEP_L0_K04 | tlast=0 | tkeep=4'b0100 | STATUS=0x00000004 (ERR_PRT=1, BUSY=0) | BUF_WIPED=1 | irq_o=1
+[PASS]           SWEEP_L0_K05 | tlast=0 | tkeep=4'b0101 | STATUS=0x00000004 (ERR_PRT=1, BUSY=0) | BUF_WIPED=1 | irq_o=1
+[PASS]           SWEEP_L0_K06 | tlast=0 | tkeep=4'b0110 | STATUS=0x00000004 (ERR_PRT=1, BUSY=0) | BUF_WIPED=1 | irq_o=1
+[PASS]           SWEEP_L0_K07 | tlast=0 | tkeep=4'b0111 | STATUS=0x00000004 (ERR_PRT=1, BUSY=0) | BUF_WIPED=1 | irq_o=1
+[PASS]           SWEEP_L0_K08 | tlast=0 | tkeep=4'b1000 | STATUS=0x00000004 (ERR_PRT=1, BUSY=0) | BUF_WIPED=1 | irq_o=1
+[PASS]           SWEEP_L0_K09 | tlast=0 | tkeep=4'b1001 | STATUS=0x00000004 (ERR_PRT=1, BUSY=0) | BUF_WIPED=1 | irq_o=1
+[PASS]           SWEEP_L0_K10 | tlast=0 | tkeep=4'b1010 | STATUS=0x00000004 (ERR_PRT=1, BUSY=0) | BUF_WIPED=1 | irq_o=1
+[PASS]           SWEEP_L0_K11 | tlast=0 | tkeep=4'b1011 | STATUS=0x00000004 (ERR_PRT=1, BUSY=0) | BUF_WIPED=1 | irq_o=1
+[PASS]           SWEEP_L0_K12 | tlast=0 | tkeep=4'b1100 | STATUS=0x00000004 (ERR_PRT=1, BUSY=0) | BUF_WIPED=1 | irq_o=1
+[PASS]           SWEEP_L0_K13 | tlast=0 | tkeep=4'b1101 | STATUS=0x00000004 (ERR_PRT=1, BUSY=0) | BUF_WIPED=1 | irq_o=1
+[PASS]           SWEEP_L0_K14 | tlast=0 | tkeep=4'b1110 | STATUS=0x00000004 (ERR_PRT=1, BUSY=0) | BUF_WIPED=1 | irq_o=1
+[PASS]           SWEEP_L1_K00 | tlast=1 | tkeep=4'b0000 | STATUS=0x00000004 (ERR_PRT=1, BUSY=0) | BUF_WIPED=1 | irq_o=1
+[PASS]           SWEEP_L1_K02 | tlast=1 | tkeep=4'b0010 | STATUS=0x00000004 (ERR_PRT=1, BUSY=0) | BUF_WIPED=1 | irq_o=1
+[PASS]           SWEEP_L1_K04 | tlast=1 | tkeep=4'b0100 | STATUS=0x00000004 (ERR_PRT=1, BUSY=0) | BUF_WIPED=1 | irq_o=1
+[PASS]           SWEEP_L1_K05 | tlast=1 | tkeep=4'b0101 | STATUS=0x00000004 (ERR_PRT=1, BUSY=0) | BUF_WIPED=1 | irq_o=1
+[PASS]           SWEEP_L1_K06 | tlast=1 | tkeep=4'b0110 | STATUS=0x00000004 (ERR_PRT=1, BUSY=0) | BUF_WIPED=1 | irq_o=1
+[PASS]           SWEEP_L1_K08 | tlast=1 | tkeep=4'b1000 | STATUS=0x00000004 (ERR_PRT=1, BUSY=0) | BUF_WIPED=1 | irq_o=1
+[PASS]           SWEEP_L1_K09 | tlast=1 | tkeep=4'b1001 | STATUS=0x00000004 (ERR_PRT=1, BUSY=0) | BUF_WIPED=1 | irq_o=1
+[PASS]           SWEEP_L1_K10 | tlast=1 | tkeep=4'b1010 | STATUS=0x00000004 (ERR_PRT=1, BUSY=0) | BUF_WIPED=1 | irq_o=1
+[PASS]           SWEEP_L1_K11 | tlast=1 | tkeep=4'b1011 | STATUS=0x00000004 (ERR_PRT=1, BUSY=0) | BUF_WIPED=1 | irq_o=1
+[PASS]           SWEEP_L1_K12 | tlast=1 | tkeep=4'b1100 | STATUS=0x00000004 (ERR_PRT=1, BUSY=0) | BUF_WIPED=1 | irq_o=1
+[PASS]           SWEEP_L1_K13 | tlast=1 | tkeep=4'b1101 | STATUS=0x00000004 (ERR_PRT=1, BUSY=0) | BUF_WIPED=1 | irq_o=1
+[PASS]           SWEEP_L1_K14 | tlast=1 | tkeep=4'b1110 | STATUS=0x00000004 (ERR_PRT=1, BUSY=0) | BUF_WIPED=1 | irq_o=1
+
+--- [Phase 3] Post-Error Recovery & Golden Hash Verification ---
+[PASS] POST_ERR_RECOVERY_ABC  | tlast=1 | tkeep=4'b0111 | DIGEST=ba7816bf...f20015ad (MATCH)
+=========================================================================================
+ TEST SUMMARY: PASS = 31 / 31, ERROR = 0
+ === SHA256 DIRECTED TKEEP TEST PASSED ===
+=========================================================================================
+$finish called at time : 14215 ns : File "/home/c0rnpotato/link/sha256/dv/static_tb/tb_sha256_tkeep.sv" Line 394
+exit
+INFO: xsimkernel Simulation Memory Usage: 286000 KB (Peak: 334560 KB), Simulation CPU Usage: 840 ms
+INFO: [Common 17-206] Exiting xsim at Wed Nov 18 21:46:21 2026...

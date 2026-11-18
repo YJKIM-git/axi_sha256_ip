@@ -1,0 +1,6 @@
+{
+  "reg": [
+    {"bits": 32, "name": "HASH_W", "attr": "RO"}
+  ],
+  "config": {"lanes": 1, "bits": 32}
+}

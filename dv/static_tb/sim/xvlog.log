@@ -1,0 +1,15 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/sha256/design/sha256_axi_wrapper.sv" into library work
+INFO: [VRFC 10-311] analyzing module sha256_axi_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/sha256/design/sha256_core/sha256_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/sha256/design/sha256_core/sha256_controller.sv" into library work
+INFO: [VRFC 10-311] analyzing module sha256_controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/sha256/design/sha256_core/sha256_core.sv" into library work
+INFO: [VRFC 10-311] analyzing module sha256_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/sha256/design/sha256_core/sha256_datapath.sv" into library work
+INFO: [VRFC 10-311] analyzing module sha256_datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/sha256/design/sha256_core/sha256_message_schedule.sv" into library work
+INFO: [VRFC 10-311] analyzing module sha256_message_schedule
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/sha256/design/sha256_core/sha256_round_logic.sv" into library work
+INFO: [VRFC 10-311] analyzing module sha256_round_logic
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/c0rnpotato/link/sha256/dv/static_tb/tb_sha256_tkeep.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_sha256_tkeep

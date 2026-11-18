@@ -1,0 +1,9 @@
+{
+  "reg": [
+    {"bits": 1, "name": "BSY", "attr": "RO"},
+    {"bits": 1, "name": "DON", "attr": "RO"},
+    {"bits": 1, "name": "ERR", "attr": "RO"},
+    {"bits": 29, "name": "RSVD", "attr": "RO"}
+  ],
+  "config": {"lanes": 2, "bits": 32}
+}

@@ -1,0 +1,10 @@
+{
+  "reg": [
+    {"bits": 1, "name": "EN", "attr": "R/W"},
+    {"bits": 1, "name": "IEN", "attr": "R/W"},
+    {"bits": 1, "name": "STRT", "attr": "R/W(P)"},
+    {"bits": 1, "name": "SRST", "attr": "R/W(P)"},
+    {"bits": 28, "name": "RSVD", "attr": "RO"}
+  ],
+  "config": {"lanes": 2, "bits": 32}
+}
